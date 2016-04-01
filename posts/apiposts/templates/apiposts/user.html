@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+    <ul id="results">
+    <h3> User Info </h3>
+    <li> name : {{user.name}} </li>
+    <li> username : {{user.username}} </li>
+    <li> email : {{user.email}} </li>
+    <li> phone : {{user.phone}} </li>
+    </ul>
+
+    <h3> Posts by {{user.name}} </h3>
+
+
+    {% for post in user_posts %}
+        <ul id="comment" >
+            <b> Post number {{ forloop.counter }}</b>
+             <li> Title : {{ post.title}} </li>
+            <li> Body : {{ post.body}} </li>
+        </ul>
+    {% endfor %}
+
+
+{% endblock %}
