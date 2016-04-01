@@ -6,3 +6,4 @@ at the [Department Of Informatics & Telematics](http://www.dit.hua.gr/index.php/
 
 ### Lab branches
 * [Lab 1](https://github.com/dithua/WIS-2016/tree/lab1)
+* [Lab 2](https://github.com/dithua/WIS-2016/tree/lab2)
