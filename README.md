@@ -9,7 +9,7 @@ Second lab for the course Web Information Systems (2016).
 > source bin/activate
 
 3. Install django defining version
-> pip install -U django==1.9
+> pip install -U django==1.9  
 > pip install django-registration
 
 4. Clone this project
