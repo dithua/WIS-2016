@@ -1,5 +1,6 @@
 # WIS-2016 - Lab 2
 Second lab for the course Web Information Systems (2016).
+####[YouTube video](https://www.youtube.com/watch?v=pVOSM-ACHhI)
 
 1. Initialize virtualenv
 > virtualenv lab2
