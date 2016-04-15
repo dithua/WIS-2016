@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+<h1>Posts</h1>
+<ul>
+{% for post in object_list %}
+     <li> <a href = "{% url 'posts:db-id' post.id %}"> ID: {{post.id}} - Title : {{ post.title}} </a> </li>
+{% empty %}
+    <li>No posts yet.</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

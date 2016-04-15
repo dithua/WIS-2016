@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+<h1> Soap WS Users </h1>
+
+<table class="table table-striped">
+   <tr class="active">
+   <th class="active" >First Name</th>
+   <th class="active">Last Name</th>
+ </tr>
+{% for result in results %}
+   <tr class="active">
+       <td class="active"> {{result.firstName}} </td>
+       <td class="active"> {{result.lastName}} </td>
+   <tr/>
+{% endfor %}
+
+   </table>
+<br>
+
+<a href="{% url 'soapws:create-user' %}"> Create new User </a>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+<ul id="results">
+    {% for post in data %}
+     <li> <a href = "{% url 'posts:db-id' post.id %}"> ID: {{post.id}} - Title : {{ post.title}} </a> </li>
+    {% endfor %}
+
+</ul>
+{% endblock %}

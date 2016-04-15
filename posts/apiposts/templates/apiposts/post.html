@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+    <ul id="results">
+    <h3> Post </h3>
+    {% if api %}
+        <li> <a href = "{% url 'posts:api-user' post.userId %}"> User Id : {{post.userId}} </a> </li>
+    {% endif %}
+    <li> Post Id : {{post.id}} </li>
+     <li> Title : {{ post.title}} </li>
+    <li> Body : {{ post.body}} </li>
+    </ul>
+
+    <h3> Comments </h3>
+
+
+    {% for comment in comments %}
+        <ul id="comment" >
+            <b> Comment number {{ forloop.counter }}</b>
+             <li>  Body : {{ comment.body }} </li>
+             <li> Name: {{ comment.name}} -- Email: {{comment.email}} </li>
+        </ul>
+    {% endfor %}
+
+
+{% endblock %}
